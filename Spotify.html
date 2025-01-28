@@ -7,10 +7,8 @@
   <title>SPOTIFYING</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="Spotify.css">
-  <link rel="preload" href="Spotify.css" as="style" onload="this.rel='stylesheet'">
   <link rel="icon" href="./favicon.ico">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -37,14 +35,36 @@
           </li>
         </ul>
       </nav>
+      <div class="library">
+        <div class="library_content">
+          <button class="library_button">
+            <span class="fa fas fa-book"></span>
+            <span>My Library</span>
+          </button>
+          <span class="fa fa-plus"></span>
+        </div>
+      </div>
+      <section class="section-playlist">
+        <div class="section-playlist_content">
+          <span class="text title">Create the first playlist.</span>
+          <span class="text subtitle">It's easy, we're going to help you!</span>
+          <button class="section-playlist_button">
+            <span>Create Playlist</span>
+          </button>
+        </div>
+      </section>
+      <div class="cookies">
+        <a href="">Cookies</a>
+      </div>
+      <div class="languages">
+        <button class="languages_button">
+          <span class="fa fa-globe"></span>
+          <span>Portugues do Brasil</span>
+        </button>
+      </div>
     </div>
   </div>
-
 </body>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    console.log("Page fully loaded, styles applied.");
-  });
-</script>
+<script src="Spotify.js" defer></script>
 
 </html>
