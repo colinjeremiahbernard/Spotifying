@@ -5,18 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SPOTIFYING</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="Spotify.css">
-  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./src/styles/reset.css">
+  <link rel="stylesheet" href="./src/styles/spotify.css">
+  <link rel="stylesheet" href="./src/styles/vars.css">
+  <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
+  <link rel="stylesheet" href="./src/styles/main-content.css">
+  <link rel="icon" type="image/x-icon" href="./src/Assets/Icons/favicon.ico">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+
 
 <body>
   <div class="sidebar">
     <div class="sidebar_navigation">
       <div class="logo">
         <a href="">
-          <img src="./Assets/Icons/LogoSpotify.png" alt="Spotify Logo">
+          <img src="./src/Assets/Icons/LogoSpotify.png" alt="Spotify Logo">
         </a>
       </div>
       <nav>
@@ -64,6 +68,37 @@
       </div>
     </div>
   </div>
+
+  <main>
+    <div class="main-container">
+      <nav class="header_navigation">
+        <div class="navigation">
+          <button class="arrow-left">
+            <img src="./src/Assets/Icons/small-left-arrow.png" alt="Seta esquerda">
+          </button>
+          <button class="arrow-right">
+            <img src="./src/Assets/Icons/small-right-arrow.png" alt="Seta direita">
+          </button>
+        </div>
+        <div class="header_search">
+          <img src="./src/Assets/Icons/search.png" alt="">
+          <input id="search-input" type="text" maxlength="800" placeholder="What would you like to listen to?">
+        </div>
+        <div class="header_login">
+          <button class="subscribe">Sign up</button>
+          <button class="login">Get in</button>
+        </div>
+      </nav>
+      <div class="disafio">
+        <h1>Boa tarde!</h1>
+        <h1>Navegar por todas as seções</h1>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer></footer>
 </body>
 <script src="Spotify.js" defer></script>
 
